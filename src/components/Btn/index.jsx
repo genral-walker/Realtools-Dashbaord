@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
 
-const Btn = ({ children, type, active }) => {
+export const Btn = ({ children, type, active }) => {
   const checkBtnType = (type) => {
     switch (type) {
       case 'nav':
@@ -13,5 +13,3 @@ const Btn = ({ children, type, active }) => {
 
   return <button className={checkBtnType(type)}>{children}</button>;
 };
-
-export default Btn;

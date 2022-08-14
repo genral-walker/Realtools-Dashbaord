@@ -1,7 +1,7 @@
-import Btn from 'components/Btn';
+import { Btn } from 'components';
 import styles from './index.module.scss';
 
-const Box = ({ children, type, votes, topic, details, count, btnName }) => {
+export const Box = ({ children, type, votes, topic, details, count, btnName }) => {
   const classesToReturn = (type) => {
     switch (type) {
       case 'inverse':
@@ -43,5 +43,3 @@ const Box = ({ children, type, votes, topic, details, count, btnName }) => {
     );
   }
 };
-
-export default Box;
